@@ -14,8 +14,8 @@ end
 user_choice = 0
 puts 
 until user_choice.between?(1, directors.size)
-puts "Выберите режиссера"
-user_choice = gets.to_i  
+  puts "Выберите режиссера"
+  user_choice = gets.to_i  
 end
 puts "Вы выбрали:"
 film_choice = films.select { |x| x.director == directors[user_choice - 1] }.sample
